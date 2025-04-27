@@ -1,0 +1,12 @@
+package com.designpattern.behavioural.obserber;
+
+public interface StockObservable {
+
+    void add(NotificationAlertObserver notificationAlertObserver);
+    void remove(NotificationAlertObserver notificationAlertObserver);
+
+    void notifySubscriber();
+
+    void setStockCount(int stockCount);
+    int getStockCount();
+}
